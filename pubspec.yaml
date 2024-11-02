@@ -17,3 +17,14 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets: 
+  - images/baturraden1.jpg
+  - images/baturraden2.jpg
+  - images/baturraden3.jpg
+  fonts:
+  - family: Oxygen
+    fonts:
+    - asset: fonts/Oxygen-Regular.ttf
+  - family: Staatliches
+    fonts:
+    - asset: fonts/Staatliches-Regular.ttf
