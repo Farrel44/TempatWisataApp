@@ -1,3 +1,3 @@
 # aplikasi_wisata
 
-A new Flutter project.
+Flutter project dari codelab 1 dicoding 
