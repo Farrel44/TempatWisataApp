@@ -23,7 +23,53 @@ class DetailScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(),
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Container(
+              margin: const EdgeInsets.only(top: 16.0),
+              child: const Text(
+                'Baturraden',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 30.0,
+                  fontWeight: FontWeight.bold,
+                ),
+                )
+              ),
+              Container(
+                margin: const EdgeInsets.symmetric(vertical: 16.0,),
+                child: const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Column(
+                      children: <Widget>[
+                        Icon(Icons.calendar_today),
+                        SizedBox(height: 8.0,),
+                        Text('Buka setiap hari')
+                      ],
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Icon(Icons.lock_clock),
+                        SizedBox(height: 8.0),
+                        Text("07.00 - 17.00")
+                      ],
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Icon(Icons.monetization_on),
+                        SizedBox(height: 8.0),
+                        Text("RP 25.000")
+                      ],
+                    )
+                  ],
+                ),
+              ),
+          ],
+        ),
+      ),
     );
   }
 }
