@@ -67,6 +67,14 @@ class DetailScreen extends StatelessWidget{
                   ],
                 ),
               ),
+              Container(
+                padding: const EdgeInsets.all(16.0),
+                child: const Text(
+                  "Taman hutan alami yang tertata rapi, sejuk, nyaman , bersih dan aman. Pedagang makanan khas seperti sate kelinci, tempe mendoan, nasi pecel, berjajar rapi di tepi jalan dengan harga tetap bersahabat.",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 16.0),
+                ),
+              )
           ],
         ),
       ),
