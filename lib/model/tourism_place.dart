@@ -65,9 +65,9 @@ var tourismPlaceList = [
       ticketPrice: "RP 15.000",
       imageAsset: 'images/curug_cipendok.jpg',
       imageUrls: [
-        'https://wisatapro.com/wp-content/uploads/2020/02/Curug-Cipendok.jpg.webp',
-        'https://www.pantainesia.com/wp-content/uploads/2020/12/curug-cipendok-2-1024x683.jpg.webp',
-        'https://www.itrip.id/wp-content/uploads/2022/05/Curug-Cipendok.jpg',
+        'https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/867/2024/01/15/1-742884947.png',
+        'https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/11/2024/02/19/Screenshot_20240219_122456_Instagram-3602981438.jpg',
+        'https://picture.triptrus.com/image/2014/06/curug-cipendok-2.jpeg',
       ],
     ),
     TourismPlace(
@@ -80,9 +80,9 @@ var tourismPlaceList = [
       ticketPrice: "RP 5.000",
       imageAsset: 'images/andhang_pangrenan.jpg',
       imageUrls: [
-        'https://jatengprov.go.id/storage/taman-andhang-pangrenan.jpg',
-        'https://wisatainfo.com/wp-content/uploads/2021/04/Taman-Andhang-Pangrenan.jpg.webp',
-        'https://liburanyuk.co.id/wp-content/uploads/2020/02/Taman-Andhang-Pangrenan.jpg',
+        'https://cdngnfi2.sgp1.cdn.digitaloceanspaces.com/gnfi/uploads/images/2022/11/0321202022-andhang--pangrenan-gnfi.png',
+        'https://cdngnfi2.sgp1.cdn.digitaloceanspaces.com/gnfi/uploads/images/2022/11/0321212022-andhang--pangrenan-gnfi3.png',
+        'https://cdngnfi2.sgp1.cdn.digitaloceanspaces.com/gnfi/uploads/images/2022/11/0321192022-andhang--pangrenan-gnfi2.png',
       ],
-    ),
+    ),  
 ];
