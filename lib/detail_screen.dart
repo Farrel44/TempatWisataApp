@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:aplikasi_wisata/model/tourism_place.dart';
   
@@ -22,18 +20,23 @@ class DetailScreen extends StatelessWidget{
                 SafeArea(
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: CircleAvatar(
-                      backgroundColor: Colors.white,
-                      child: IconButton(
-                        icon: const Icon(
-                          Icons.arrow_back,
-                          color: Colors.black,
+                    child: Row(
+                      children:[
+                        CircleAvatar(
+                          backgroundColor: Colors.white,
+                          child: IconButton(
+                            icon: const Icon(
+                              Icons.arrow_back,
+                              color: Colors.black,
+                            ),
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                          ),
                         ),
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
-                      ),
-                    )
+                        const FavoriteButton(),
+                      ],
+                    ),
                   )
                 )
               ],
@@ -43,7 +46,7 @@ class DetailScreen extends StatelessWidget{
               child: Text(
                 place.name,
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 30.0,
                   fontFamily: 'Staatliches',
                 ),
@@ -118,5 +121,28 @@ class DetailScreen extends StatelessWidget{
       ),
     );
   }
-
 }
+
+class FavoriteButton extends StatefulWidget {
+  const FavoriteButton({super.key});
+  
+  @override
+  __FavoriteButton createState() => __FavoriteButton();
+}
+
+class __FavoriteButton extends State<FavoriteButton>{
+  bool isFavorite = false;
+  @override
+  Widget build(BuildContext context) {
+    return 
+    IconButton(onPressed: () {
+      setState(() {
+        isFavorite = !isFavorite;
+      });
+    }, icon: Icon(
+
+      isFavorite ? Icons.favorite : Icons.favorite_border),
+      color: Colors.red,);
+  }
+}
+
