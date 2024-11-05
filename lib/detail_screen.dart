@@ -9,7 +9,7 @@ class DetailScreen extends StatelessWidget{
   Widget build(BuildContext context) {
     var informationTextStyle = const TextStyle(fontFamily: 'Oxygen');
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
