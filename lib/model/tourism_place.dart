@@ -50,9 +50,9 @@ var tourismPlaceList = [
       ticketPrice: "RP 10.000",
       imageAsset: 'images/curug_telu.jpg',
       imageUrls: [
-        'https://o-cdn-cas.oramiland.com/parenting/images/Curug_Telu.width-800.format-webp.webp',
-        'https://wisatapedi.com/wp-content/uploads/2020/05/Curug-Telu-Purwokerto.jpg.webp',
-        'https://jatengprov.go.id/storage/curug_telu_karangsalam.jpg',
+        'https://static.banyumaskab.go.id/website/images/website_1909190927145d82e7823cdfd.jpg',
+        'https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/65/2024/06/13/efaeca77-513a-4cbb-ad68-386a070e1e6e-542826065.jpg',
+        'https://www.djkn.kemenkeu.go.id/files/images/2022/05/116.jpg',
       ],
     ),
     TourismPlace(
