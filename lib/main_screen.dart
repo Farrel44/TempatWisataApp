@@ -3,7 +3,7 @@ import 'package:aplikasi_wisata/detail_screen.dart';
 import 'package:aplikasi_wisata/model/tourism_place.dart';
 
 class MainScreen extends StatelessWidget {
-  const MainScreen({Key? key}) : super(key: key);
+  const MainScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

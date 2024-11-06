@@ -4,7 +4,7 @@ import 'package:aplikasi_wisata/model/tourism_place.dart';
   
 class DetailScreen extends StatelessWidget{
   final TourismPlace place;
-  const DetailScreen({Key? key, required this.place}) : super(key: key);
+  const DetailScreen({super.key, required this.place});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class DetailScreen extends StatelessWidget{
 }
 
 class DetailWebPage extends StatefulWidget {
-  DetailWebPage({Key? key, required this.place, required this.informationTextStyle}) : super(key: key);
+  const DetailWebPage({super.key, required this.place, required this.informationTextStyle});
   final TourismPlace place;
   final TextStyle informationTextStyle;
 
@@ -96,14 +96,12 @@ class _DetailWebPageState extends State<DetailWebPage> {
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: <Widget>[
-                              Container(
-                                child: Text(
-                                  widget.place.name,
-                                  textAlign: TextAlign.center,
-                                  style: const TextStyle(
-                                    fontSize: 30,
-                                    fontFamily: 'Staatliches'
-                                  ),
+                              Text(
+                                widget.place.name,
+                                textAlign: TextAlign.center,
+                                style: const TextStyle(
+                                  fontSize: 30,
+                                  fontFamily: 'Staatliches'
                                 ),
                               ),
                               Row(
@@ -307,6 +305,7 @@ class FavoriteButton extends StatefulWidget {
   const FavoriteButton({super.key});
   
   @override
+  // ignore: library_private_types_in_public_api
   __FavoriteButton createState() => __FavoriteButton();
 }
 
